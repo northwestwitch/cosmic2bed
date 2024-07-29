@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "cosmic2bed"
+version = "0.1.0"
+description = ""
+authors = ["Chiara Rasi <rasi.chiara@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.scripts]
+cosmic2bed = "cosmic2bed.convert:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
