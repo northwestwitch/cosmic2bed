@@ -1,5 +1,5 @@
 # cosmic2bed
-Convert TSV COSMIC format to bed and bigbed
+Convert TSV COSMIC format to bed
 
 Created files correspond to the UCSC COSMIC tracks described [here](https://genome.ucsc.edu/cgi-bin/hgTables?db=hg38&hgta_group=phenDis&hgta_track=cosmicMuts&hgta_table=cosmicMuts&hgta_doSchema=describe+table+schema)
 
