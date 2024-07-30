@@ -36,6 +36,9 @@ def convert_tsv(infile: str, outfile: str, build: str) -> None:
         writer = csv.DictWriter(fout, delimiter='\t', fieldnames=COL_ORDER, extrasaction='ignore')
         for row in reader:
             row["SCORE"] = SCORE_VALUE # Replace missing value
+            if "STRAND" not in row:
+                row["STRAND"] = "."
+
             writer.writerow(row)
 
     # Sort by coordinates:
