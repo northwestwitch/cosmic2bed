@@ -42,10 +42,12 @@ def convert_tsv(infile: str, outfile: str, build: str) -> None:
     cmd = f"cat {outfile} | sort -k1,1 -k2,2n > {outfile.replace('.bed', '_sorted.bed')}"
     system(cmd)
 
-    # Convert to bigbed
+    # Convert to bigbed --> Doesn't work yet
+    """
     cmd = f". {BED2BIGBED_PATH} -type=bed6+3 {outfile.replace('.bed', '_sorted.bed')} {BUILD_CHROM_LENGTHS[build]} {outfile.replace('.bed', '.bb')} -tab"
     logger.warning(cmd)
     system(cmd)
+    """
 
 
 def set_outfile(infile: str, outfile: Optional[str], in_format: str) -> str:
