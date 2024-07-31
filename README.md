@@ -1,5 +1,5 @@
 # cosmic2bed
-Convert TSV COSMIC format to bed
+Howto and script to convert Cosmic_MutantCensus and Cosmic_NonCodingVariants .TSV files into bigbed tracks that can be used in IGV.
 
 Created files correspond to the UCSC COSMIC tracks described [here](https://genome.ucsc.edu/cgi-bin/hgTables?db=hg38&hgta_group=phenDis&hgta_track=cosmicMuts&hgta_table=cosmicMuts&hgta_doSchema=describe+table+schema)
 
